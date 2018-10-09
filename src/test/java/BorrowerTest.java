@@ -26,12 +26,12 @@ public class BorrowerTest {
         assertEquals(0, borrower.countCollection());
     }
 
-//    @Test
-//    public void hasBorrowBook() {
-//        library.addBookToStock(book);
-//        library.addBookToStock(book);
-//        borrower.borrowBook(library);
-//        assertEquals(1, library.countStock());
-//        assertEquals(1, borrower.countCollection());
-//    }
+    @Test
+    public void hasBorrowBook() {
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        borrower.borrowBook(library);
+        assertEquals(1, library.countStock());
+        assertEquals(1, borrower.countCollection());
+    }
 }
