@@ -30,5 +30,22 @@ public class LibraryTest {
         assertEquals(1, library.countStock());
     }
 
+    @Test
+    public void hasCheckCapacityTrue() {
+        library.checkCapacity();
+        assertEquals(true, library.checkCapacity());
+    }
+
+    @Test
+    public void hasCheckCapacityFalse() {
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.checkCapacity();
+        assertEquals(false, library.checkCapacity());
+    }
+
 
 }

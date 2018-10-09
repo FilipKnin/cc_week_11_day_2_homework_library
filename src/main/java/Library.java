@@ -20,4 +20,14 @@ public class Library {
     public void addBookToStock(Book book) {
         this.stock.add(book);
     }
+
+    public boolean checkCapacity() {
+        if (countStock() < getCapacity() ) {
+            return true;
+        } else {
+
+            return false;
+        }
+
+    }
 }
