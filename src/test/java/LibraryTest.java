@@ -24,5 +24,11 @@ public class LibraryTest {
         assertEquals(0, library.countStock());
     }
 
+    @Test
+    public void hasAddBookToStock() {
+        library.addBookToStock(book);
+        assertEquals(1, library.countStock());
+    }
+
 
 }
