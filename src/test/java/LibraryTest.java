@@ -58,6 +58,15 @@ public class LibraryTest {
         assertEquals(5, library.countStock());
     }
 
+    @Test
+    public void hasRemoveBook() {
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.removeBook();
+        assertEquals(1, library.countStock());
+    }
+
+
 
 
 }
