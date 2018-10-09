@@ -47,5 +47,17 @@ public class LibraryTest {
         assertEquals(false, library.checkCapacity());
     }
 
+    @Test
+    public void addBookIfThereIsNoSpace() {
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        assertEquals(5, library.countStock());
+    }
+
+
 
 }
