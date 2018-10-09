@@ -12,4 +12,8 @@ public class Borrower {
     public String getName() {
         return this.name;
     }
+
+    public int countCollection() {
+        return this.collection.size();
+    }
 }

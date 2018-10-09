@@ -20,4 +20,18 @@ public class BorrowerTest {
     public void hasName() {
         assertEquals("name1", borrower.getName());
     }
+
+    @Test
+    public void hasCountCollection() {
+        assertEquals(0, borrower.countCollection());
+    }
+
+//    @Test
+//    public void hasBorrowBook() {
+//        library.addBookToStock(book);
+//        library.addBookToStock(book);
+//        borrower.borrowBook(library);
+//        assertEquals(1, library.countStock());
+//        assertEquals(1, borrower.countCollection());
+//    }
 }
