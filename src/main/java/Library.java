@@ -12,4 +12,8 @@ public class Library {
     public int getCapacity() {
         return this.capacity;
     }
+
+    public int countStock() {
+        return this.stock.size();
+    }
 }

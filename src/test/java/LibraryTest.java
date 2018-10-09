@@ -19,5 +19,10 @@ public class LibraryTest {
         assertEquals(5, library.getCapacity());
     }
 
+    @Test
+    public void hasCountStock() {
+        assertEquals(0, library.countStock());
+    }
+
 
 }
